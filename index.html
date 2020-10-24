@@ -20,16 +20,16 @@
 
     		    <nav>
     		        <ul>
-    		            <li>Acceuil</li>
-    		            <li>Services</li>
-    		            <li>Portofolio</li>
-    		            <li>Contact</li>
+    		            <li><a href="#en-tete">Acceuil</a></li>
+    		            <li><a href="#services">Services</a></li>
+    		            <li><a href="#projects">Portofolio</a></li>
+    		            <li><a href="#contact">Contact</a></li>
     		        </ul>
     		    </nav>
         	
         </header>
 
-        <section class="en-tete">
+        <section class="en-tete" id="en-tete">
 
         	<!-- <div class="slider">
         		<ul id="slides">
@@ -76,7 +76,7 @@
                 <span class="outer-line"></span>
             </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit magni, cumque, quasi asperiores quibusdam necessitatibus numquam explicabo provident cum!</p>
+            <p id="services-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit magni, cumque, quasi asperiores quibusdam necessitatibus numquam explicabo provident cum!</p>
 
             <img class="main-feature-img" src="images/main-feature.png" alt="">
 
@@ -87,7 +87,7 @@
                 </span>
                 <div class="services-text">
                     <h3>UX Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
+                    <p class="services-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
                 </div>
             </div>
 
@@ -98,7 +98,7 @@
                 </span>
                 <div class="services-text">
                     <h3>UI Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
+                    <p class="services-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
                 </div>
             </div>
 
@@ -109,7 +109,7 @@
                 </span>
                 <div class="services-text">
                     <h3>SEO</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
+                    <p class="services-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
                 </div>
             </div>
 
@@ -117,7 +117,7 @@
 
         <hr>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             
             <h2>Nos projets</h2>
 
@@ -129,20 +129,111 @@
 
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-            <img class="portfolio-images" src="images/portfolio/01.jpg" alt="">
+            <div id="portfolio-projects">
+
+                
+                    <input id="tab-all-works" class="radio-tab" type="radio" checked>
+                    <input id="tab-creative" class="radio-tab" type="radio">
+                    <input id="tab-corporate" class="radio-tab" type="radio">
+                    <input id="tab-portfolio" class="radio-tab" type="radio">
+
+                    <div class="tabs">
+                        <label class="tab" id="one-tab" for="tab-all-works">All Works</label>
+                        <label class="tab" for="tab-creative">Creative</label>
+                        <label class="tab" for="tab-corporate">Corporate</label>
+                        <label class="tab" for="tab-portfolio">Portfolio</label>
+                    </div>
+                    
+                
+
+                <div class="tab-items">
+                    <div class="tab-content" id="content-all-works">
+                        <img class="portfolio-images" src="images/portfolio/01.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/02.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/03.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/04.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/05.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/06.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/07.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/08.jpg" alt="">
+                    </div>
+              
+                    <div class="tab-content" id="content-creative">
+                        <!-- <img class="portfolio-images" src="images/portfolio/01.jpg" alt=""> -->
+                        <img class="portfolio-images" src="images/portfolio/02.jpg" alt="">
+                        <!-- <img class="portfolio-images" src="images/portfolio/03.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/04.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/05.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/06.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/07.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/08.jpg" alt=""> -->
+                    </div>
+                
+                    <div class="tab-content" id="content-corporate">
+                        <!-- <img class="portfolio-images" src="images/portfolio/01.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/02.jpg" alt=""> -->
+                        <img class="portfolio-images" src="images/portfolio/03.jpg" alt="">
+                        <!-- <img class="portfolio-images" src="images/portfolio/04.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/05.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/06.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/07.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/08.jpg" alt=""> -->
+                    </div>
+                
+                    <div class="tab-content" id="content-portfolio">
+                        <!-- <img class="portfolio-images" src="images/portfolio/01.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/02.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/03.jpg" alt=""> -->
+                        <img class="portfolio-images" src="images/portfolio/04.jpg" alt="">
+                        <!-- <img class="portfolio-images" src="images/portfolio/05.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/06.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/07.jpg" alt="">
+                        <img class="portfolio-images" src="images/portfolio/08.jpg" alt=""> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <img class="portfolio-images" src="images/portfolio/01.jpg" alt="">
             <img class="portfolio-images" src="images/portfolio/02.jpg" alt="">
             <img class="portfolio-images" src="images/portfolio/03.jpg" alt="">
             <img class="portfolio-images" src="images/portfolio/04.jpg" alt="">
             <img class="portfolio-images" src="images/portfolio/05.jpg" alt="">
             <img class="portfolio-images" src="images/portfolio/06.jpg" alt="">
             <img class="portfolio-images" src="images/portfolio/07.jpg" alt="">
-            <img class="portfolio-images" src="images/portfolio/08.jpg" alt="">
+            <img class="portfolio-images" src="images/portfolio/08.jpg" alt=""> -->
 
         </section>
 
         <hr>
 
-        <section class="contact"></section>
+        <section class="contact" id="contact">
+            
+            <div style="width: 100%">
+                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20place%20du%20Capitol%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div> 
+
+            <div class="contact-form-container">
+                
+                <h2>Contact</h2>
+                <p>
+                    WebAgency<br>
+                    06.05.03.02.01<br>
+                    1 place du Capitole<br>
+                    31000 Toulouse
+                </p>
+
+                <form action="" class="contact-form">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                </form>
+            </div>
+
+        </section>
+
+        
 
         
 

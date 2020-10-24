@@ -69,7 +69,11 @@ h2 {
 
 /*** SERVICES ***/
 
-.services  p {
+#services-p {
+    text-align: center;
+}
+
+.services-text-p {
     text-align: left;
 }
 
@@ -90,7 +94,7 @@ h3 {
   
 }
 
-    /*Service Icon*/
+    /*** Service Icon ***/
 
 .services-details .service_icon
 {
@@ -159,4 +163,75 @@ h3 {
 
 .portfolio-images {
     width: 100%;
+}
+
+#portfolio-projects {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+    /*** Tab ***/
+
+.tabs {
+    display: block;
+    justify-content: space-between;
+}
+
+.tab {
+  cursor: pointer;
+  padding:5px 10px;
+  background:#5CADD3;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+}
+
+.tab-items {
+  background:#fffffff6;
+  min-height:200px;
+  width:100%;
+  max-width:500px;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+}
+
+.tab-content {
+  display:none;
+  animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.radio-tab {
+  display:none;
+}
+
+#tab-all-works:checked ~ .tab-items #content-all-works,
+#tab-creative:checked ~ .tab-items #content-creative,
+#tab-corporate:checked ~ .tab-items #content-corporate,
+#tab-portfolio:checked ~ .tab-items #content-portfolio {
+  display:block
+}
+
+#tab-all-works:checked ~ .tab-items #content-all-works,
+#tab-creative:checked ~ .tab-items #content-creative,
+#tab-corporate:checked ~ .tab-items #content-corporate,
+#tab-portfolio:checked ~ .tab-items #content-portfolio {
+  background:#fffffff6;
+  color:#000;
+}
+
+/*** CONATCT ***/
+.contact-form {
+    display: flex;
+    flex-direction: column;
 }
