@@ -29,7 +29,7 @@ body
 /**** HEADER ***/
 
 header {
-    width: 100%;
+  width: 100%;
 	/*justify-content: space-between;
 	background-color: white;
 	width: 100%;
@@ -40,34 +40,102 @@ header {
 }
 
 header img {
-	margin: 15px;
-    height: 40px;
+	margin: 10px;
+  margin-left: 40px;
+  height: 45px;
 }
 
 nav ul {
 	display: flex;
 	list-style-type: none;
+  margin-left: -10px;
 }
 
 nav ul li {
 	margin: 5px;
+  color: lightgrey;
 }
 
+nav ul li:hover {
+  color: grey;
+}
+
+nav ul li a {
+  text-decoration:none;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex !important;
+    flex-direction: row;
+  }
+}
 
 /*** SLIDER ***/
 
 .mySlides {
     /*display:none;
     height: 70%;*/
+    margin-bottom: 200px;
 }
 
 h2 {
     text-align: center;
     font-family: "robotoregular";
+    margin: 0px !important;
+    font-size: 2em !important;
 }
 
+.caption {
+    position: absolute;
+    top: 20%;
+    padding-left: 5%;
+}
+
+.caption a {
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    border: solid #4ba4ce 1px;
+    background-color: #4ba4ce;
+    padding: 5px 8px;
+    border-bottom: solid 2px #4494BB;
+}
+
+.slogan {
+    text-transform: uppercase;
+    margin-top: 160px;
+}
+
+.slogan strong {
+    color: #5CADD3;
+}
+
+.sub-slogan {
+}
+
+@media screen and (min-width: 475px) {
+
+  .caption {
+    position: absolute;
+    top: 0%;
+    padding-left: 5%;
+  }
+
+  .mySlides {
+    margin-bottom: 10px;
+  }
+
+  .caption {
+    color: white;
+  }
+}
 
 /*** SERVICES ***/
+
+#services {
+  padding: 5px;
+}
 
 #services-p {
     text-align: center;
@@ -102,17 +170,14 @@ h3 {
     margin-right: 24px;
 }
 
-#services > div > span .services-icons-border
+#services > div > div > div > span .services-icons-border
 {
     color: #5CADD3;
     width: 65px;
-    /*height: 65px;*/
     border-radius: 50%;
     border: solid #D7D7D7 1px;
     text-align: center;
     line-height: 65px;
-    /*vertical-align: middle;*/
-    /*padding: 0;*/
     font-size: 1.6em;
 }
 
@@ -126,6 +191,20 @@ h3 {
     background-color: white;
     border-radius: 50%;
     border: solid white 2px;
+}
+
+@media screen and (min-width: 900px) {
+
+  #services-infos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #services-infos img {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 /*** TITLES UNDERLINE*/
@@ -174,17 +253,18 @@ h3 {
     /*** Tab ***/
 
 .tabs {
-    display: block;
-    justify-content: space-between;
+    margin: 2px;
 }
 
 .tab {
   cursor: pointer;
-  padding:5px 10px;
+  padding:5px 5px;
   background:#5CADD3;
   display:inline-block;
   color:#fff;
   border-radius:3px 3px 0px 0px;
+  font-size: 0.8em;
+  margin:5px;
 }
 
 .tab-items {
@@ -194,7 +274,7 @@ h3 {
   max-width:500px;
   border-radius:3px;
   overflow:hidden;
-  padding:20px;  
+  padding:10px;  
 }
 
 .tab-content {
@@ -202,6 +282,7 @@ h3 {
   animation: fadein .8s;
 }
 
+/*check*/
 @keyframes fadein {
     from {
         opacity:0;
@@ -230,8 +311,45 @@ h3 {
   color:#000;
 }
 
-/*** CONATCT ***/
+.tabs label i::before {
+    position: absolute;
+    color: #468CAD;
+}
+
+/*** CONTACT ***/
+#google, .contact-form-container {
+  width: 100%;
+  position: absolute;
+  height: 600px;
+}
+
+.contact-form-container {
+    background-color: rgba(92,173,211, .4) !important;
+}
+
 .contact-form {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    background-color: rgba(255,255,255, .8);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 3px;
+    max-width: 300px;
 }
+
+.contact-form input {
+  margin: 5px;
+}
+
+.button {
+    color: white;
+    background-color: rgb(92,173,211);
+    border-bottom: 3px solid rgb(70,140,173);
+    border-radius: 3px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+

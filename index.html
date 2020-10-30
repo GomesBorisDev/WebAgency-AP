@@ -7,6 +7,7 @@
 	<meta name="description" content="Agence web à Toulouse. Nous vous accompagnons sur vos projets digitaux.">
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css" />
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +21,7 @@
 
     		    <nav>
     		        <ul>
-    		            <li><a href="#en-tete">Acceuil</a></li>
+    		            <li><a href="#en-tete" selected>Acceuil</a></li>
     		            <li><a href="#services">Services</a></li>
     		            <li><a href="#projects">Portofolio</a></li>
     		            <li><a href="#contact">Contact</a></li>
@@ -30,6 +31,30 @@
         </header>
 
         <section class="en-tete" id="en-tete">
+
+            <div>
+                <div>
+                    <div>
+                        <img class="mySlides" src="images/slider/bg1.jpg" alt="" style="width:100%">
+                        <div class="caption">
+                            <p class="slogan"><strong>WebAgency</strong> : L'agence de tous vos projets !</p>
+                            <p class="sub-slogan">Vous avez un <strong>projet web</strong>? La WebAgency vous aide à le réaliser</p>
+                            <a href="">Plus d'infos</a>
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <img class="mySlides" src="images/slider/bg2.jpg" alt="" style="width:100%">
+                        <div class="caption">
+                            <p>WebAgency : Une agence web reconnue!</p>
+                            <p>Solutions <strong>creatives</strong>, <strong>corporates</strong>, découvrez toutes nos réalisations!</p>
+                            <a href="">Plus d'infos</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+           <!--  <button></button>
+            <button></button> -->
 
         	<!-- <div class="slider">
         		<ul id="slides">
@@ -54,22 +79,24 @@
     			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
         	</div> -->
 
-            <div class="">
+            <!-- <div class="">
               <img class="mySlides" src="images/slider/bg1.jpg" style="width:100%">
-              <!-- <img class="mySlides" src="images/slider/bg2.jpg" style="width:100%"> -->
+              <img class="mySlides" src="images/slider/bg2.jpg" style="width:100%">
 
-              <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
-            </div>
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div> -->
 
         </section>
 
         <hr>
 
+        <!-- SERVICES -->
         <section class="services" id="services">
 
             <h2>Nos services</h2>
 
+            
             <div class="section_title_underline"><!--puce-->
                 <span class="outer-line"></span>
                 <i class="fa fa-circle fa" aria-hidden="true"></i>
@@ -78,38 +105,43 @@
 
             <p id="services-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit magni, cumque, quasi asperiores quibusdam necessitatibus numquam explicabo provident cum!</p>
 
-            <img class="main-feature-img" src="images/main-feature.png" alt="">
+            <div id="services-infos" >
 
-            <div class="services-details">
-                <span class="service_icon">
-                    <i class="fa fa-line-chart fa-2x services-icons-border" aria-hidden="true"></i>
-                    <i class="fa fa-circle fa" aria-hidden="true"></i>
-                </span>
-                <div class="services-text">
-                    <h3>UX Design</h3>
-                    <p class="services-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
-                </div>
-            </div>
+                <img class="main-feature-img" src="images/main-feature.png" alt="">
 
-            <div class="services-details">
-                <span class="service_icon">
-                    <i class="fa fa-cubes fa-2x services-icons-border" aria-hidden="true"></i>
-                    <i class="fa fa-circle fa" aria-hidden="true"></i>
-                </span>
-                <div class="services-text">
-                    <h3>UI Design</h3>
-                    <p class="services-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
-                </div>
-            </div>
+                <div id="services-details-container">
+                    <div class="services-details">
+                        <span class="service_icon">
+                            <i class="fa fa-line-chart fa-2x services-icons-border" aria-hidden="true"></i>
+                            <i class="fa fa-circle fa" aria-hidden="true"></i>
+                        </span>
+                        <div class="services-text">
+                            <h3>UX Design</h3>
+                            <p class="services-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
+                        </div>
+                    </div>
 
-            <div class="services-details">
-                <span class="service_icon">
-                    <i class="fa fa-pie-chart fa-2x services-icons-border" aria-hidden="true"></i>
-                    <i class="fa fa-circle fa" aria-hidden="true"></i>
-                </span>
-                <div class="services-text">
-                    <h3>SEO</h3>
-                    <p class="services-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
+                    <div class="services-details">
+                        <span class="service_icon">
+                            <i class="fa fa-cubes fa-2x services-icons-border" aria-hidden="true"></i>
+                            <i class="fa fa-circle fa" aria-hidden="true"></i>
+                        </span>
+                        <div class="services-text">
+                            <h3>UI Design</h3>
+                            <p class="services-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
+                        </div>
+                    </div>
+
+                    <div class="services-details">
+                        <span class="service_icon">
+                            <i class="fa fa-pie-chart fa-2x services-icons-border" aria-hidden="true"></i>
+                            <i class="fa fa-circle fa" aria-hidden="true"></i>
+                        </span>
+                        <div class="services-text">
+                            <h3>SEO</h3>
+                            <p class="services-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis aut dolor delectus vel repellendus eaque!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -138,10 +170,18 @@
                     <input id="tab-portfolio" class="radio-tab" type="radio">
 
                     <div class="tabs">
-                        <label class="tab" id="one-tab" for="tab-all-works">All Works</label>
-                        <label class="tab" for="tab-creative">Creative</label>
-                        <label class="tab" for="tab-corporate">Corporate</label>
-                        <label class="tab" for="tab-portfolio">Portfolio</label>
+                        <label class="tab" id="one-tab" for="tab-all-works">All Works
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </label>
+                        <label class="tab" for="tab-creative">Creative
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </label>
+                        <label class="tab" for="tab-corporate">Corporate
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </label>
+                        <label class="tab" for="tab-portfolio">Portfolio
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </label>
                     </div>
                     
                 
@@ -209,26 +249,27 @@
 
         <section class="contact" id="contact">
             
-            <div style="width: 100%">
+            <div id="google" style="width: 100%">
                 <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20place%20du%20Capitol%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div> 
 
             <div class="contact-form-container">
-                
-                <h2>Contact</h2>
-                <p>
-                    WebAgency<br>
-                    06.05.03.02.01<br>
-                    1 place du Capitole<br>
-                    31000 Toulouse
-                </p>
 
                 <form action="" class="contact-form">
+                    <h2>Contact</h2>
+                    <p>
+                        WebAgency<br>
+                        06.05.03.02.01<br>
+                        1 place du Capitole<br>
+                        31000 Toulouse
+                    </p>
                     <input type="text">
                     <input type="text">
                     <input type="text">
                     <input type="text">
+                    <a href="#" class="button" title="Envoyer votre message">Envoyer</a>
                 </form>
+
             </div>
 
         </section>
@@ -238,9 +279,6 @@
         
 
         <footer></footer>
-
-
-    <script type="text/javascript" src="js/slider.js"></script>
 	
 </body>
 </html>
